@@ -23,6 +23,328 @@
     <title>Skazka - отдых мечты</title>
   </head>
   <body>
+    <!-- NAVIGATION -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-primary fixed-top py-2"
+      id="main-nav"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <h3 class="navbar-title">Skazka</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Коттеджи</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Отзывы</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            class="active"
+            data-bs-slide-to="0"
+            data-bs-target="#carousel"
+          ></li>
+          <li data-bs-slide-to="1" data-bs-target="#carousel"></li>
+          <li data-bs-slide-to="2" data-bs-target="#carousel"></li>
+          <li data-bs-slide-to="3" data-bs-target="#carousel"></li>
+          <li data-bs-slide-to="4" data-bs-target="#carousel"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-image carousel-image-1 active">
+            <div class="carousel-text carousel-text-1">
+              <h1>
+                Окунись В <span class="text-highlight">Зимнюю</span> Сказку
+              </h1>
+              <p class="d-none d-sm-block">
+                Прочь из дома, или почему провести праздник лучше в съёмном
+                коттедже.
+              </p>
+              <a href="" class="btn btn-outline-primary btn-lg"
+                >Узнать большее</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image carousel-image-2">
+            <div class="carousel-text carousel-text-2">
+              <h1>Коттеджи с <span class="text-highlight">видом</span></h1>
+              <p class="d-none d-sm-block">
+                Коттеджи с панорамным видом на озеро, горы, пруд, лес с учетом
+                ваших увлечений и пожеланий.
+              </p>
+              <a href="" class="btn btn-outline-primary btn-lg"
+                >Узнать большее</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image carousel-image-3">
+            <div class="carousel-text carousel-text-3">
+              <h1>
+                <span class="text-highlight">уединение</span> в любое время года
+              </h1>
+              <p class="d-none d-sm-block">
+                Коттеджи доступны в любое время года. Вы отдыхаете, а мы
+                позаботимся, чтобы у вас было все необходимое.
+              </p>
+              <a href="" class="btn btn-outline-primary btn-lg"
+                >Узнать большее</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image carousel-image-4">
+            <div class="carousel-text carousel-text-4">
+              <h1>
+                долой уединение, да здравствует отдых в коттеджном
+                <span class="text-highlight">поселке</span>
+              </h1>
+              <p class="d-none d-sm-block">
+                Порыбачить, искупаться в водоеме, устроить барбекю, покататься
+                на велосипедах, погулять по лесу и подышать свежим воздухом —
+                все это звучит, как идеальный план для отдыха с друзьями на
+                выходные, не так ли?
+              </p>
+              <a href="" class="btn btn-outline-primary btn-lg"
+                >Узнать большее</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image carousel-image-5">
+            <div class="carousel-text carousel-text-5">
+              <h1>
+                Коттеджи на любой <span class="text-highlight">вкус</span>
+              </h1>
+              <p class="d-none d-sm-block">
+                У нас представлены: современные, классические, и многие другие
+                коттеджи.
+              </p>
+              <a href="" class="btn btn-outline-primary btn-lg"
+                >Узнать большее</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="#carousel"
+            data-bs-slide="prev"
+            class="carousel-control-prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a
+            href="#carousel"
+            data-bs-slide="next"
+            class="carousel-control-next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION-->
+    <section class="bg-light text-primary py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-md-0 mb-4 text-center">
+            <i class="bi bi-archive-fill fs-2 mb-2"></i>
+            <h3>Огромный выбор</h3>
+            <p>Огромный каталог коттеджей для любого типа отдыха.</p>
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+            <i class="bi bi-telephone-fill fs-2 mb-2"></i>
+            <h3>Удобство</h3>
+            <p>
+              Мы всегда на связи. Подготовим все необходимое для проживания и
+              предоставим любое оборудование.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+            <i class="bi bi-map-fill fs-2 mb-2"></i>
+            <h3>Разнообразие</h3>
+            <p>
+              Гегорафия наших коттеджей и коттеджных поселков охватываеи весь
+              мир.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEARCH HEADING -->
+    <section id="search-heading" class="py-5">
+      <div class="dark-overlay">
+        <div class="container d-flex flex-column h-100 justify-content-center">
+          <h2 class="mb-2">
+            Готовы найти коттедж своей мечты и погрузиться в сказку?
+          </h2>
+          <p class="d-none d-md-block">
+            Представь где бы ты хотел оказаться, и найдите это место в нашем
+            каталоге.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEARCH FORM-->
+    <section class="bg-primary text-light py-5">
+      <div class="container">
+        <form class="form mx-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="interests" class="form-label"
+                >Что вас интересует?</label
+              >
+              <select id="interests" class="form-select bg-light text-primary">
+                <option>Рыбалка</option>
+                <option>Походы</option>
+                <option>Лыжы</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="view" class="form-label">Вид из окна?</label>
+              <select id="view" class="form-select bg-light text-primary">
+                <option>Озеро</option>
+                <option>Лес</option>
+                <option>Горы</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="type" class="form-label">Тип коттеджа?</label>
+              <select id="type" class="form-select bg-light text-primary">
+                <option>Классический</option>
+                <option>Современный</option>
+                <option>Финский</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="number" class="form-label">Сколько вас?</label>
+              <select id="number" class="form-select bg-light text-primary">
+                <option>2</option>
+                <option>4</option>
+                <option>6</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="check-in" class="form-label">Дата заезда:</label>
+              <input
+                id="check-in"
+                type="date"
+                class="form-control bg-light text-primary"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="check-out" class="form-label">Дата отъезда:</label>
+              <input
+                id="check-out"
+                type="date"
+                class="form-control bg-light text-primary"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <a href="" class="btn btn-outline-light btn-lg">Искать</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- COTTAGE'S LIST-->
+    <section class="list py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-light">
+              <img
+                src="/img/cottage-1.jpg"
+                alt="Cottage 1"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body p-4">
+                <h3 class="card-title">Дом на холме</h3>
+                <small>3500 Руб./Сутки</small>
+                <hr />
+                <div class="card-text">
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="col-9">
+                      Максимум 6 человек
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-sun-fill"></i>
+                      <i class="bi bi-snow"></i>
+                    </div>
+                    <div class="col-9">
+                      Доступно круглый год
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">
+                      Рыбалка
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">Походы</div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <a href="" class="btn btn-outline-light btn-lg">Искать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
