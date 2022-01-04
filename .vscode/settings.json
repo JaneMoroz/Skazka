@@ -1,0 +1,23 @@
+{
+  "liveSassCompile.settings.formats": [
+    // This is Default.
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**",
+    "./scss/bootstrap-grid.scss",
+    "./scss/bootstrap-reboot.csss",
+    "./scss/bootstrap-utilities.csss"
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 5 versions"],
+  "liveSassCompile.settings.includeItems": [
+    "./scss/bootstrap.scss",
+    "./scss/style.scss"
+  ]
+}
