@@ -17,12 +17,25 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
     />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <title>Skazka - отдых мечты</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#main-nav" id="home">
     <!-- NAVIGATION -->
     <nav
       class="navbar navbar-expand-md navbar-light bg-primary fixed-top py-2"
@@ -42,19 +55,19 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#" class="nav-link">О нас</a>
+              <a href="#home" class="nav-link">О нас</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Коттеджи</a>
+              <a href="#search-heading" class="nav-link">Коттеджи</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Отзывы</a>
+              <a href="#testimonials-heading" class="nav-link">Отзывы</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Услуги</a>
+              <a href="#services-section" class="nav-link">Услуги</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Контакты</a>
+              <a href="#cta-section" class="nav-link">Контакты</a>
             </li>
           </ul>
         </div>
@@ -217,7 +230,7 @@
     <!-- SEARCH FORM-->
     <section class="bg-primary text-light py-5">
       <div class="container">
-        <form class="form mx-auto">
+        <form class="form-search mx-auto">
           <div class="row">
             <div class="col-md-6">
               <label for="interests" class="form-label"
@@ -276,7 +289,7 @@
           </div>
           <div class="row">
             <div class="col text-center">
-              <a href="" class="btn btn-outline-light btn-lg">Искать</a>
+              <a href="#list" class="btn btn-outline-light btn-lg">Искать</a>
             </div>
           </div>
         </form>
@@ -284,17 +297,17 @@
     </section>
 
     <!-- COTTAGE'S LIST-->
-    <section class="list py-5">
+    <section id="list" class="py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 mb-3">
             <div class="card text-light">
               <img
                 src="/img/cottage-1.jpg"
                 alt="Cottage 1"
                 class="card-img-top img-fluid"
               />
-              <div class="card-body p-4">
+              <div class="card-body p-lg-4 p-3">
                 <h3 class="card-title">Дом на холме</h3>
                 <small>3500 Руб./Сутки</small>
                 <hr />
@@ -303,26 +316,20 @@
                     <div class="col-3">
                       <i class="bi bi-people-fill"></i>
                     </div>
-                    <div class="col-9">
-                      Максимум 6 человек
-                    </div>
+                    <div class="col-9">Максимум 6 человек</div>
                   </div>
                   <div class="row">
                     <div class="col-3">
                       <i class="bi bi-sun-fill"></i>
                       <i class="bi bi-snow"></i>
                     </div>
-                    <div class="col-9">
-                      Доступно круглый год
-                    </div>
+                    <div class="col-9">Доступно круглый год</div>
                   </div>
                   <div class="row">
                     <div class="col-3">
                       <i class="bi bi-check-lg"></i>
                     </div>
-                    <div class="col-9">
-                      Рыбалка
-                    </div>
+                    <div class="col-9">Рыбалка</div>
                   </div>
                   <div class="row">
                     <div class="col-3">
@@ -332,7 +339,9 @@
                   </div>
                   <div class="row">
                     <div class="col text-center">
-                      <a href="" class="btn btn-outline-light btn-lg">Искать</a>
+                      <a href="" class="btn btn-outline-light btn-lg"
+                        >Забронировать</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -340,10 +349,412 @@
             </div>
           </div>
 
-          
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card text-light">
+              <img
+                src="/img/cottage-2.jpg"
+                alt="Cottage 1"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body p-lg-4 p-3">
+                <h3 class="card-title">Коттедж "Алтай"</h3>
+                <small>5500 Руб./Сутки</small>
+                <hr />
+                <div class="card-text">
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="col-9">Максимум 10 человек</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-sun-fill"></i>
+                      <i class="bi bi-snow"></i>
+                    </div>
+                    <div class="col-9">Доступно круглый год</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">Рыбалка</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">Походы</div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <a href="" class="btn btn-outline-light btn-lg"
+                        >Забронировать</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card text-light">
+              <img
+                src="/img/cottage-3.jpg"
+                alt="Cottage 1"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body p-lg-4 p-3">
+                <h3 class="card-title">Коттедж "Дубровник</h3>
+                <small>7500 Руб./Сутки</small>
+                <hr />
+                <div class="card-text">
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="col-9">Максимум 12 человек</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-sun-fill"></i>
+                      <i class="bi bi-snow"></i>
+                    </div>
+                    <div class="col-9">Доступно лето/осень</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">Рыбалка</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">Походы</div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <a href="" class="btn btn-outline-light btn-lg"
+                        >Забронировать</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card text-light">
+              <img
+                src="/img/cottage-4.jpg"
+                alt="Cottage 1"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body p-lg-4 p-3">
+                <h3 class="card-title">Коттедж в поселке на Волге</h3>
+                <small>3500 Руб./Сутки</small>
+                <hr />
+                <div class="card-text">
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="col-9">Максимум 7 человек</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-sun-fill"></i>
+                      <i class="bi bi-snow"></i>
+                    </div>
+                    <div class="col-9">Доступно круглый год</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">Рыбалка</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">Походы</div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <a href="" class="btn btn-outline-light btn-lg"
+                        >Забронировать</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card text-light">
+              <img
+                src="/img/cottage-5.jpg"
+                alt="Cottage 1"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body p-lg-4 p-3">
+                <h3 class="card-title">Коттедж на озере</h3>
+                <small>3500 Руб./Сутки</small>
+                <hr />
+                <div class="card-text">
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="col-9">Максимум 6 человек</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-sun-fill"></i>
+                      <i class="bi bi-snow"></i>
+                    </div>
+                    <div class="col-9">Доступно круглый год</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">Рыбалка</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">Походы</div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <a href="" class="btn btn-outline-light btn-lg"
+                        >Забронировать</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card text-light">
+              <img
+                src="/img/cottage-6.jpg"
+                alt="Cottage 1"
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body p-lg-4 p-3">
+                <h3 class="card-title">Коттедж "Викторианский"</h3>
+                <small>5500 Руб./Сутки</small>
+                <hr />
+                <div class="card-text">
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="col-9">Максимум 6 человек</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-sun-fill"></i>
+                      <i class="bi bi-snow"></i>
+                    </div>
+                    <div class="col-9">Доступно круглый год</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">Рыбалка</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="col-9">Походы</div>
+                  </div>
+                  <div class="row">
+                    <div class="col text-center">
+                      <a href="" class="btn btn-outline-light btn-lg"
+                        >Забронировать</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGINATION -->
+        <nav>
+          <ul class="pagination justify-content-center fs-5">
+            <li class="page-item disabled">
+              <a href="#" class="page-link">Назад</a>
+            </li>
+            <li class="page-item active">
+              <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link">Вперед</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials-heading" class="py-5">
+      <div class="dark-overlay">
+        <div class="container d-flex flex-column h-100 justify-content-center">
+          <h2 class="mb-2">Что говорят о нас:</h2>
+          <div class="row text-center">
+            <div class="col">
+              <div class="slider">
+                <div>
+                  <blockquote class="blockquote">
+                    <p class="mb-3">
+                      Отдыхали компанией 8 человек. Было очень комфортно,
+                      просторно, домашняя атмосфера! Все оборудовано. Удобная
+                      зона барбекю. Вежливые хозяева. Рекомендуем.
+                    </p>
+                    <footer class="blockquote-footer">Артем</footer>
+                  </blockquote>
+                </div>
+                <div>
+                  <blockquote class="blockquote">
+                    <p class="mb-3">
+                      Забронировали коотедж на озере на пару дней, зарядились
+                      энергией на месяцы вперед.
+                    </p>
+                    <footer class="blockquote-footer">Карина></footer>
+                  </blockquote>
+                </div>
+                <div>
+                  <blockquote class="blockquote">
+                    <p class="mb-3">
+                      Провели райские месяцы рыбача и ходя в походы, обязательно
+                      вернемся с друзьями.
+                    </p>
+                    <footer class="blockquote-footer">Петр</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- SERVICES-->
+    <div id="services-section" class="services-section text-light py-5 bg-primary">
+      <div class="container">
+        <h2 class="mb-4">Что мы предлагаем:</h2>
+        <div class="row align-items-center mb-md-0 mb-4">
+          <div class="col-md-6 col-12">
+            <img src="./img/fishing.jpg" alt="Рыбалка" class="img-fluid mb-2" />
+          </div>
+          <div class="col-md-6 col-12 fs-5">
+            Подготовим все к вашему приезду, от дров до специализированного
+            оборудования. Ходите в походы, рыбачьте, катайтесь на велосипеде не
+            думаю ни о чем.
+          </div>
+        </div>
+
+        <div class="row align-items-center mb-md-0 mb-4">
+          <div class="col-md-6 col-12 fs-5 order-md-0 order-1">
+            Доверьте нам всю транспортную суету. Мы бесплатно доставим вас из
+            аэропорта к коттеджу или организуем транспорт.
+          </div>
+          <div class="col-md-6 col-12">
+            <img src="./img/car.jpg" alt="Машина" class="img-fluid mb-2" />
+          </div>
+        </div>
+
+        <div class="row align-items-center mb-md-0 mb-4">
+          <div class="col-md-6 col-12">
+            <img
+              src="./img/instructor.jpg"
+              alt="Инструктор"
+              class="img-fluid mb-2"
+            />
+          </div>
+          <div class="col-md-6 col-12 fs-5">
+            Мы всегда предоставим в Ваше распоряжение инструктора с отличным
+            знанием местности и организуем поход для незабываемой встречи с
+            дикой природой.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div id="cta-section" class="cta-section text-primary py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">Свяжитесь с нами</h2>
+        <hr />
+        <form class="form-cta mx-auto">
+          <div class="row mb-3">
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Имя"
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Электоронная почта"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-group mb-4">
+              <span class="input-group-text"><i class="bi bi-pencil-fill"></i></span>
+              <textarea
+                class="form-control"
+                placeholder="Сообщение"
+              ></textarea>
+            </div>
+            <div class="col-md-12">
+              <button class="btn btn-outline-primary btn-lg">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center bg-primary fs-5 text-light p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="mb-0">Copyright &copy; <span id="year"></span> Skazka</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -355,10 +766,21 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <script>
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
+
+      // Init slider/slicker
+      $(".slider").slick({
+        infinite: true,
+        slideToShow: 1,
+        slideToScroll: 1,
+      });
     </script>
   </body>
 </html>
