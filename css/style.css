@@ -9,7 +9,8 @@ body {
 }
 
 .navbar {
-  border-bottom: #7C8491 2px solid;
+  border-bottom: #7c8491 2px solid;
+  white-space: nowrap;
 }
 
 .navbar-title {
@@ -27,13 +28,80 @@ body {
 .navbar .nav-item {
   font-size: 1rem;
   text-transform: uppercase;
-  margin-right: 3.6rem;
+  margin-right: 1.6rem;
 }
 
 @media (max-width: 992px) {
   .navbar .nav-item {
-    margin-right: 1.6rem;
+    margin-right: 0.5rem;
   }
+}
+
+.switch {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  background-color: #7c8491;
+  border-radius: .5rem;
+}
+
+.flicker {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: #d7e1e5;
+  border-radius: .5rem;
+  -webkit-box-shadow: inset 4px 4px 4px #fafafa, inset -4px -4px 4px rgba(195, 195, 195, 0.9);
+          box-shadow: inset 4px 4px 4px #fafafa, inset -4px -4px 4px rgba(195, 195, 195, 0.9);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.sun {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  right: 8px;
+  font-size: 1.3rem;
+  color: #d6ba29;
+}
+
+.sun i {
+  padding: 0;
+}
+
+.moon {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 8px;
+  font-size: 1.3rem;
+  color: #d7e1e5;
+}
+
+.moon i {
+  padding: 0;
+}
+
+.dark .flicker {
+  -webkit-transform: translateX(2rem);
+      -ms-transform: translateX(2rem);
+          transform: translateX(2rem);
+}
+
+.dark .sun {
+  display: none;
+}
+
+.dark .moon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .carousel-item {
@@ -187,7 +255,7 @@ body {
 
 .card small {
   font-size: 1.1rem;
-  color: #2c3646;
+  color: #616b7c;
   font-weight: 600;
 }
 
@@ -198,6 +266,10 @@ body {
 
 .card .card-text .row a {
   margin-top: 1.2rem;
+}
+
+.card-border {
+  border: 1px solid #d7e1e5;
 }
 
 #testimonials-heading {
@@ -231,7 +303,7 @@ body {
 
 .form-cta i {
   font-size: 1.8rem;
-  color: #D7E1E5;
+  color: #d7e1e5;
 }
 
 .form-cta select,

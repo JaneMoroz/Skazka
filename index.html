@@ -38,39 +38,44 @@
   <body data-bs-spy="scroll" data-bs-target="#main-nav" id="home">
     <!-- NAVIGATION -->
     <nav
-      class="navbar navbar-expand-md navbar-light bg-primary fixed-top py-2"
+      class="navbar navbar-expand-md navbar-light bg-primary fixed-top py-2 px-md-3 px-4 justify-content-md-start justify-content-end"
       id="main-nav"
     >
-      <div class="container">
-        <a href="#" class="navbar-brand">
-          <h3 class="navbar-title">Skazka</h3>
-        </a>
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a href="#search-heading" class="nav-link">Коттеджи</a>
-            </li>
-            <li class="nav-item">
-              <a href="#testimonials-heading" class="nav-link">Отзывы</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services-section" class="nav-link">Услуги</a>
-            </li>
-            <li class="nav-item">
-              <a href="#cta-section" class="nav-link">Контакты</a>
-            </li>
-          </ul>
-        </div>
+      <a href="#" class="navbar-brand me-auto">
+        <h3 class="navbar-title">Skazka</h3>
+      </a>
+      <button
+        class="navbar-toggler order-2"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="#search-heading" class="nav-link">Коттеджи</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials-heading" class="nav-link">Отзывы</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services-section" class="nav-link">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a href="#cta-section" class="nav-link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- DARK/LIGHT MODE TOGGLE BUTTON-->
+      <div class="switch me-2 me-md-0">
+        <div class="flicker"></div>
+        <div class="sun"><i class="bi bi-sun-fill"></i></div>
+        <div class="moon"><i class="bi bi-moon-stars-fill"></i></div>
       </div>
     </nav>
 
@@ -184,7 +189,7 @@
     </section>
 
     <!-- FEATURES SECTION-->
-    <section class="bg-light text-primary py-5">
+    <section class="features bg-light text-primary py-5">
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-md-0 mb-4 text-center">
@@ -228,7 +233,7 @@
     </section>
 
     <!-- SEARCH FORM-->
-    <section class="bg-primary text-light py-5">
+    <section class="search bg-primary text-light py-5">
       <div class="container">
         <form class="form-search mx-auto">
           <div class="row">
@@ -605,13 +610,13 @@
               <a href="#" class="page-link">1</a>
             </li>
             <li class="page-item">
-              <a href="#" class="page-link">2</a>
+              <a href="#" class="page-link bg-transparent text-light">2</a>
             </li>
             <li class="page-item d-sm-block d-none">
-              <a href="#" class="page-link">3</a>
+              <a href="#" class="page-link bg-transparent text-light">3</a>
             </li>
             <li class="page-item">
-              <a href="#" class="page-link">Вперед</a>
+              <a href="#" class="page-link bg-transparent text-light">Вперед</a>
             </li>
           </ul>
         </nav>
@@ -662,7 +667,10 @@
     </section>
 
     <!-- SERVICES-->
-    <div id="services-section" class="services-section text-light py-5 bg-primary">
+    <div
+      id="services-section"
+      class="services-section text-light py-5 bg-primary"
+    >
       <div class="container">
         <h2 class="mb-4">Что мы предлагаем:</h2>
         <div class="row align-items-center mb-md-0 mb-4">
@@ -711,17 +719,17 @@
         <form class="form-cta mx-auto">
           <div class="row mb-3">
             <div class="input-group">
-              <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Имя"
-              />
+              <span class="input-group-text"
+                ><i class="bi bi-person-fill"></i
+              ></span>
+              <input type="text" class="form-control" placeholder="Имя" />
             </div>
           </div>
           <div class="row mb-3">
             <div class="input-group">
-              <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+              <span class="input-group-text"
+                ><i class="bi bi-envelope-fill"></i
+              ></span>
               <input
                 type="text"
                 class="form-control"
@@ -731,11 +739,10 @@
           </div>
           <div class="row">
             <div class="input-group mb-4">
-              <span class="input-group-text"><i class="bi bi-pencil-fill"></i></span>
-              <textarea
-                class="form-control"
-                placeholder="Сообщение"
-              ></textarea>
+              <span class="input-group-text"
+                ><i class="bi bi-pencil-fill"></i
+              ></span>
+              <textarea class="form-control" placeholder="Сообщение"></textarea>
             </div>
             <div class="col-md-12">
               <button class="btn btn-outline-primary btn-lg">Отправить</button>
@@ -780,6 +787,43 @@
         infinite: true,
         slideToShow: 1,
         slideToScroll: 1,
+      });
+
+      // Dark/Light Mode
+      //Switch
+      const switchEl = document.querySelector(".switch");
+
+      // Elements to change color
+      const navbarEl = document.querySelector(".navbar");
+      const featuresEl = document.querySelector(".features");
+      const searchEl = document.querySelector(".search");
+      const listEl = document.getElementById("list");
+      const cardEls = listEl.querySelectorAll(".card");
+      const servicesEl = document.querySelector(".services-section");
+      const footerEl = document.getElementById("main-footer");
+
+      switchEl.addEventListener("click", () => {
+        switchEl.classList.toggle("dark");
+
+        const elArr1 = [navbarEl, searchEl, footerEl];
+        elArr1.forEach((el) => {
+          el.classList.toggle("bg-primary");
+          el.classList.toggle("bg-dark");
+        });
+
+        featuresEl.classList.toggle("bg-light");
+        featuresEl.classList.toggle("bg-secondary");
+
+        listEl.classList.toggle("bg-secondary");
+        cardEls.forEach((el) => {
+          el.classList.toggle("bg-secondary");
+          el.classList.toggle("card-border");
+          el.classList.toggle("text-light");
+          el.classList.toggle("text-primary");
+        });
+
+        servicesEl.classList.toggle("bg-primary");
+        servicesEl.classList.toggle("bg-secondary");
       });
     </script>
   </body>
